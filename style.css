@@ -31,3 +31,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+h1 {
+  font-size: 31px;
+  text-transform: uppercase;  
+}
+
+main {
+    text-align: center;
+}
