@@ -1,0 +1,33 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto; /* centra la schermata */
+    max-width: 540px;
+}
+
+.panel {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: rgb(184, 211, 255);
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+}
+
+body {
+    background-color: rgb(76, 100, 242);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
