@@ -12,7 +12,7 @@ Questa è un'applicazione meteo che utilizza l'API di OpenWeatherMap per fornire
 1.  Clona il repository:
 
     ```bash
-    git clone [https://github.com/unozer/meteo.git](https://github.com/unozer/meteo.git)
+    git clone https://github.com/unozer/meteo.git
     ```
 
     oppure, se preferisci usare fork:
