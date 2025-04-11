@@ -40,3 +40,31 @@ h1 {
 main {
     text-align: center;
 }
+
+/* stili sezione meteo */
+
+.meteo-info {
+    min-height: 450px;
+}
+
+.meteo-location {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.meteo-icona {
+    max-width: 90%;
+    transition: opacity 0.5s, translate 1s;
+}
+
+.meteo-temperatura {
+    font-size: 120px;
+    font-weight: 500;
+}
+
+.meteo-suggerimenti {
+    font-size: 24px;
+    font-weight: 700;
+    transition: scale 1s;
+}
