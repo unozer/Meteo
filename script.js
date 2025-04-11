@@ -20,6 +20,20 @@ function on_error() {
 }
 
 // Funzione che viene chiamata in caso di successo della geolocalizzazione
-function on_success(position) {
-    console.log("ok tutto apposto");
+async function on_success(position) {
+    // Recupero lat e long dall'oggetto position
+    const lat = position.coords.latitude;
+    const long = position.coords.longitude;
+
+    // Predispongo chiamata API OpenWeatherMap
+    const API_KEY = 'bd832622acc99b03e95f5648052a97cf';
+    const units = 'metric';
+    const lang = 'it';
+    const endpoint = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=${units}&lang=${lang}`;
+
+    // Chiamo API OpenWeatherMap
+    const response = await fetch(endpoint);
+    const data = await response.json();
+
+    console.log(data);
 }
